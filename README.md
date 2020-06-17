@@ -6,10 +6,10 @@
 
 ## 問題
 
-FizzBuzzの拡張として下記のようなパターンをAPIサーバーにPOSTし、入力を1から30としたときの出力をブラウザに表示するWebアプリケーションを完成させてください。
+FizzBuzzの拡張として下記のようなパターンをAPIサーバーにPOSTします。送信されたパターンに応じて、入力を1から30としたときの出力をブラウザに表示するWebアプリケーションを完成させてください。
 
-- データは必ずjson形式で渡されます。
-- "num"キーは必ず小さい順にソートされています。
+- データは必ずjson形式で渡されます。パターンのキーは必ず`"obj"`です。
+- `"num"`キーは必ず小さい順にソートされています。
 
 ```json
 {
@@ -31,12 +31,12 @@ FizzBuzzというプログラムは、3の倍数が入力されると�
 ## 入出力例
 ### 入力
 
-```　json
+```json
 {
     "obj":
         [
-            { "num": 3, "text": "fizz" },
-            { "num": 5, "text": "buzz" }
+            { "num": 3, "text": "Fizz" },
+            { "num": 5, "text": "Buzz" }
         ]
 }
 
@@ -53,7 +53,7 @@ FizzBuzzというプログラムは、3の倍数が入力されると�
 
 ## PHPでの回答の始めかた
 - 下記コマンドを実行し、phpサーバーを立ち上げる
-```
+```bash
 git clone git@github.com:y0he1/avilen-web-codingtest.git
 cd avilen-web-codingtest
 php -S localhost:8080 ./php/index.php 
@@ -63,7 +63,7 @@ php -S localhost:8080 ./php/index.php
 
 ## node.jsでの回答の始めかた
 - 下記コマンドを実行し、nodeサーバーを立ち上げる
-```
+```bash
 git clone git@github.com:y0he1/avilen-web-codingtest.git
 cd avilen-web-codingtest
 node ./node/index.js
