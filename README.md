@@ -50,8 +50,8 @@ FizzBuzzというプログラムは、3の倍数が入力されると�
 #### Webアプリケーション完成イメージ
 「パターンを送信」をクリックすると下図のように結果が表示されます。
 ![アプリケーションのスクリーンショット](screenshot.png "スクリーンショット")
-
-## PHPでの回答の始めかた
+## 回答の始めかた
+### PHPでの回答の始めかた
 - 下記コマンドを実行し、phpサーバーを立ち上げる
 ```bash
 git clone git@github.com:y0he1/avilen-web-codingtest.git
@@ -61,7 +61,7 @@ php -S localhost:8080 ./php/index.php
 - http://localhost:8080/start にアクセスしてアプリケーションのフロント画面にアクセスしてサーバーが立ち上がっていることを確認
 - `./php/index.php`を編集して回答をスタート
 
-## node.jsでの回答の始めかた
+### node.jsでの回答の始めかた
 - 下記コマンドを実行し、nodeサーバーを立ち上げる
 ```bash
 git clone git@github.com:y0he1/avilen-web-codingtest.git
@@ -71,9 +71,11 @@ node ./node/index.js
 - http://localhost:8080/start にアクセスしてアプリケーションのフロント画面にアクセスしてサーバーが立ち上がっていることを確認
 - `./node/index.js`を編集して回答をスタート
 
-## 解答の提出
+## 回答の提出
 
 - 回答のプログラムはphpかnode.jsのどちらかの言語を利用して記述してください。
 - phpで回答する方は`php/index.php`を、node.jsで回答される方は`node/index.js`を編集して提出してください。
 - `index.html`は変更してはいけません。
-- 回答を **ご自身の** 公開gitレポジトリにプッシュしてください
+- 回答を **ご自身の** 公開gitレポジトリにプッシュしてください。(githubでも構いません)
+- 以下のリンクにある回答提出フォームに従い、ブラウザに表示したプログラムの出力とgitリポジトリのurlを提出してください。
+(https://forms.gle/YPgik7KbigP2AJ3t6)
