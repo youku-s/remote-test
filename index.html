@@ -30,7 +30,7 @@
     const resultTextbox = document.getElementById("result-text");
     function func() {
         xhr.open('POST', backendUrl);
-        xhr.send(pattern);
+        xhr.send(JSON.stringify(pattern));
         xhr.onreadystatechange = function () {
             const res = JSON.parse(xhr.responseText);
             if (xhr.readyState === 4 && xhr.status === 200) {
