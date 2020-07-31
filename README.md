@@ -54,7 +54,7 @@ FizzBuzzというプログラムは、3の倍数が入力されると�
 ### PHPでの解答の始めかた
 - 下記コマンドを実行し、phpサーバーを立ち上げる
 ```bash
-git clone git@github.com:y0he1/avilen-web-codingtest.git
+git clone https://gitlab.com/y0he1/avilen-web-codingtest.git
 cd avilen-web-codingtest
 php -S localhost:8080 ./php/index.php 
 ```
@@ -64,7 +64,7 @@ php -S localhost:8080 ./php/index.php
 ### node.jsでの解答の始めかた
 - 下記コマンドを実行し、nodeサーバーを立ち上げる
 ```bash
-git clone git@github.com:y0he1/avilen-web-codingtest.git
+git clone https://gitlab.com/y0he1/avilen-web-codingtest.git
 cd avilen-web-codingtest
 node ./node/index.js
 ```
