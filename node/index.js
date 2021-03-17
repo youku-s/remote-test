@@ -11,7 +11,27 @@ const server = http.createServer((req, res)=>{
       });
    }
    if( endpoint==='/api' ){
-      // ここに処理を記述してください。  
+      // ここに処理を記述してください。   
+      let received = "";
+      req.on("data", chunk => {
+         received += chunk;
+      });
+      req.on("end", () => {
+         let results = [];
+         const data = JSON.parse(received);
+         for (let i = 1; i <= 30; i ++) {
+            let filteredData = data.obj.filter(x => i % x.num == 0);
+            filteredData.forEach(x => {
+               results.push(x.text);
+            })
+            if (filteredData.length == 0) {
+               results.push(i.toString());
+            }
+         }
+         res.writeHead(200, {'Content-Type': 'application/json'});
+         res.write(JSON.stringify({"data" : results.join(",") }));
+         res.end();
+      })
    }
 });
 server.listen(8080); 
