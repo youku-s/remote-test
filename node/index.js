@@ -21,11 +21,10 @@ const server = http.createServer((req, res)=>{
          const data = JSON.parse(received);
          for (let i = 1; i <= 30; i ++) {
             let filteredData = data.obj.filter(x => i % x.num == 0);
-            filteredData.forEach(x => {
-               results.push(x.text);
-            })
             if (filteredData.length == 0) {
                results.push(i.toString());
+            } else {
+               results.push(filteredData.map(x => x.text).join(" "));
             }
          }
          res.writeHead(200, {'Content-Type': 'application/json'});
